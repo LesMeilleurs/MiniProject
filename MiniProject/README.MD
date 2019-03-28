@@ -29,14 +29,13 @@ The data report will be formatted as JSON file, for example:
 }
 ```
 You could find these data in the route _/airqualitychart_
----
+
 And there is a CQL (Cassandra Query Language) query inside the application that could sort out the AQI number of a certain datetime. Just simply enter the route /airqualitychart/<datetime> you would get a json formatted output(for example):
 ```json
 {
   "2019-03-28T13:00:00Z": 52
 }
 ```
----
 *You could either get a text-style output, simply by going to another site: 35.239.178.220/airqualitychart/<datetime>*
 
 ## Cloud Deployment status
@@ -46,18 +45,18 @@ Replication factor of keyspace: 2
 
 ## API Usage
 **Restful API:**
----
+
 Current air quality data:
 http://35.224.38.13/airqualitychart/
----
+
 AQI data at a certain time:(Example tamplate)
 http://35.239.178.220/airqualitychart/2019-03-28T12:00:00Z
----
+
 ***NOTICE***
 The format of _datetime_ should be:
 _YYYY-MM-DD_ T _HH:MM:SS_ Z
 where Z means zulu (Greenwich Mean Time).
----
+
 **REST Methods:**
 GET, POST, PUT, DELETE
 
