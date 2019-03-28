@@ -1,0 +1,5 @@
+flask_venv/
+instance/
+exip.txt
+cassandra.txt
+aq.json
